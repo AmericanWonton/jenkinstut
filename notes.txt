@@ -1,0 +1,38 @@
+Installing Jenkins on Localhost:
+NOTE: For Jenkins, you gotta install Java first: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04
+Jenkins LocalHost Setup: https://phoenixnap.com/kb/install-jenkins-ubuntu
+On Ubuntu: https://pkg.jenkins.io/debian-stable/
+
+You can open it on localhost:8080
+
+If you need to create a project, click 'new item'
+
+Build History shows the status of the build
+
+Manage Jenkins is where you can configure your system and global plugins
+
+For this demo, we have a free style project
+
+You can click build and build history to see the result
+
+How to print environment variables: https://stackoverflow.com/questions/40050793/how-to-print-echo-environment-variables
+
+Jenkins exist because you want continuous integration with multiple developers. 
+You can run tests every time you submit code. If the test failed, the test gets sent back to the 
+developer and it allows the developer to see what's broken and fix it. They ALSO don't have to write 
+tests locally on their computer.
+So ideally, you'd want to build with Dev, then run jenkins to build that for Prod, (if it works and passess the tests)
+
+Jenkins Pipeline:
+Step 1: Commit Code 
+Step 2: Build The Code
+Step 3: Runs Tests; unit tests or additional tests
+Step 4: Release
+Step 5: Deploy/Deliver to production
+
+Jenkins pulls code from a repository, builds code with Maven, then pushes the results. These test scripts then run 
+,(sometimes in Maven/Selenium)
+If you're testing a LOT of files, you'll need to create differnt Jenkins serves to test that
+The Jenkins Master node send different build versions to Jenkins Slave nodes
+
+Jenkins Settings:
