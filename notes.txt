@@ -36,3 +36,19 @@ If you're testing a LOT of files, you'll need to create differnt Jenkins serves 
 The Jenkins Master node send different build versions to Jenkins Slave nodes
 
 Jenkins Settings:
+Look at email settings this dude set, preety basic
+Make sure your 'use less secure apps' setting is turned onhttps://support.google.com/accounts/answer/6010255?p=lsa_blocked&hl=en&visit_id=637560087533405556-335181732&rd=1#zippy=%2Cif-less-secure-app-access-is-on-for-your-account
+
+Global Tool Configuration
+You need to put in all the tools you'll need for building code...Jenkins dosen't know what is building!
+
+Configure Security
+You can set up LDAP and all kinds of stuff for maintaing User access
+Typically, Jenkins stores access in a file system
+You can schedule jobs to run from within jenkins...need to remember some cron tools to do so
+We did so under 'build periodically'
+
+You can run Jenkins jobs externally as well outside of Jenkins. You need to create credentials for it
+For example, go to plugin manager and search with this: Role-based Authorization Strategy
+
+In order to connect your containers and such with jenkins, you need to go install some plug ins
