@@ -52,3 +52,12 @@ You can run Jenkins jobs externally as well outside of Jenkins. You need to crea
 For example, go to plugin manager and search with this: Role-based Authorization Strategy
 
 In order to connect your containers and such with jenkins, you need to go install some plug ins
+
+We added a java file called Hello.java. In the configure job menu, we connected it to this github and 
+in the build commands we put the following to build/run it
+javac Hello.java
+java Hello
+Might need to give it your github credentials
+If you have issues building this repo: https://stackoverflow.com/questions/23906352/git-pullrequest-job-failed-couldnt-find-any-revision-to-build-verify-the-repo
+For this example, we had to download maven and tomcat
+FUCK THIS EXAMPLE, I'M USING ONE WITH GOLANG
